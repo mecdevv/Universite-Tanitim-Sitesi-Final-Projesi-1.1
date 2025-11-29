@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #A90432; /* Koyu Lacivert - Kurumsal */
+    --secondary-color: #FDB912; /* Altın Rengi - Prestij */
+    --text-dark: #333;
+    --text-light: #f4f4f4;
+    --bg-light: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+
+
+.top-bar {
+    background-color: #051626;
+    color: white;
+    padding: 5px 0;
+    font-size: 0.8rem;
+}
+
+.top-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.logo-uni{
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .top-bar{
+        display: none;
+    }
+
+    .nav-links{
+        display: none;
+    }
+}
+
+.welcome-page{
+    height: 60vh;
+    background: linear-gradient(rgba(15, 42, 71, 0.7), rgba(15, 42, 71, 0.7)), 
+                url('https://images.unsplash.com/photo-1583373834259-46cc92173cb7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+
