@@ -107,5 +107,30 @@ header{
     color: white;
 }
 
+.welcome-discover button{
+    font-family: Arial;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 15px;
+    transition: 0.15s;
+}
+
+.welcome-discover button:hover{
+    background-color: #dda30f;
+}
+
+.welcome-discover button:active{
+    background-color: #deb347;  
+    color: #dccda8;
+}
+
+
 
 
