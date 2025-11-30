@@ -3,7 +3,8 @@
 :root {
     --primary-color: #A90432;
     --secondary-color: #FDB912;
-    --text-dark: #333;
+    --text-darker: #333;
+    --text-dark: #535353;
     --text-light: #f4f4f4;
     --bg-light: #f9f9f9; 
 }
@@ -17,10 +18,19 @@
 
 body {
     background-color: var(--bg-light);
-    color: var(--text-dark);
+    color: var(--text-darker);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 a { text-decoration: none; color: inherit; transition: 0.3s; }
@@ -150,7 +160,8 @@ header {
 
 .news-header h2 {
     text-align: center;
-    margin: 50px 0 30px 0;
+    margin: 50px 0 50px 0;
+
     font-size: 36px;
     color: var(--primary-color);
 }
@@ -256,4 +267,64 @@ header {
     .news-container {
         grid-template-columns: 1fr;
     }
+}
+
+.kadro-section{
+    position: relative;
+    padding-bottom: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kadro-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}  
+
+.kadro-container{
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    max-height: 800px; 
+    overflow: hidden; 
+}
+
+.kadro-card {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 13px;
+    
+    border-bottom: 3px solid transparent;
+}
+
+.kadro-card:hover { 
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-bottom-color: var(--primary-color);
+}
+
+.kadro-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+}
+
+.kadro-card p{
+    display: block;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
 }
