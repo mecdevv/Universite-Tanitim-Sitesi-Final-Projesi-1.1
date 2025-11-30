@@ -82,6 +82,8 @@ header{
 
 .nav-links a:hover, .nav-links a.active {
     color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: -2px;
 }
 
 @media (max-width: 768px) {
@@ -107,17 +109,18 @@ header{
     color: white;
 }
 
+.welcome-discover p{
+    color: rgb(192, 192, 192);
+}
+
 .welcome-discover button{
     font-family: Arial;
     font-weight: bold;
     background-color: var(--secondary-color);
     color: white;
     border: none;
-    border-radius: 100px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-right: 10px;
-    padding-left: 10px;
+    border-radius: 25px;
+    padding: 7px 10px 7px 10px;
     margin-top: 15px;
     transition: 0.15s;
 }
@@ -131,6 +134,102 @@ header{
     color: #dccda8;
 }
 
+.news-header h2 {
+    text-align: center;
+    margin: 50px 0 30px 0;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+.news-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px;
+}
+
+.news-card {
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card:hover {
+    transform: translateY(-2px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.news-content h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: ;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    
+    /* Burasi AI */
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+.read-more {
+    margin-top: auto;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.read-more:hover {
+    color: #b5830c;
+}
 
 
+.news-footer {
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
 
+.btn-all-news {
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.btn-all-news:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
