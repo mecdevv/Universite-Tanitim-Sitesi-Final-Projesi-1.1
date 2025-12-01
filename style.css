@@ -541,7 +541,6 @@ header {
     margin: 0;
 }
 
-/* Footer Responsive */
 @media (max-width: 1024px) {
     .footer-main {
         grid-template-columns: repeat(2, 1fr);
