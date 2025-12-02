@@ -6,7 +6,7 @@
     <title>Helium Üniversitesi</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body style="padding-bottom: 100px;">
+<body>
     <div class="top-bar">
         <div class="top-container">
             <span>iletisim@helium.edu.tr | &#9742; - 444 85 44 </span>
@@ -17,14 +17,28 @@
         <nav class="nav-container">
             <a href="index.html" class="logo">HELIUM <span class="logo-uni">Universitesi</span></a>
             <div class="nav-links">
-                <a href="index.html">Anasayfa</a>
-                <a href="bolumler.html">Bölümlerimiz</a>
+                <a href="index.html" class="active">Anasayfa</a>
+                <a href="/haberler/haberler.html">Haberler & Etkinlikler</a>
                 <a href="kadro.html">Kadromuz</a>
-                <a href="haberler.html">Haberler</a>
-            </div>  
+                <a href="bolumler.html">Bölümlerimiz</a>
+            </div>
+            <button class="nav-toggle" aria-label="Menüyü Aç/Kapat">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
-
+    <section class="bolumler-section">
+        <div class="bolumler-section-text-left">
+            <h3>Helium Üniversitesinde Sunulan Bölümler</h3>
+            <p>Helium Üniversitesi'nde mühendislik, fen bilimleri, sağlık bilimleri, sosyal bilimler ve yönetim alanlarında geniş bir program yelpazesi sunuyoruz. Geleceğe yön veren disiplinlerde lisans ve lisansüstü programlarımızı keşfedin.</p>
+        </div>
+        <div class="bolumler-section-img-right">
+            <img src="https://images.pexels.com/photos/267582/pexels-photo-267582.jpeg" alt="Bilgisayar başında çalışan öğrenciler">
+        </div>
+    </section>
 </body>
+<script src="/script.js"></script>
 </html>
