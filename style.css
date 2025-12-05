@@ -9,6 +9,7 @@
     --text-dark: #535353;
     --text-light: #f4f4f4;
     --bg-light: #f9f9f9;
+    --bg-dlight: #eaeaea;
 }
 
 * {
@@ -718,7 +719,7 @@ header.nav-open .nav-toggle span:nth-child(3) {
 
 .bolumler-section {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     justify-content: space-between;
     padding: 10px 15px 10px 15px;
 
@@ -729,10 +730,11 @@ header.nav-open .nav-toggle span:nth-child(3) {
 }
 
 .bolumler-flex-left input {
-    padding: 5px 10px 5px 10px;
+    padding: 12.5px 0px 12.5px 20px;
     border-style: solid;
     border-color: #A90432;
-    border-width: 10px;
+    border-width: 20px;
+    font-size: 15px;
     width: 100%;
     margin: 15px 0 30px 0;
     box-sizing: border-box;
@@ -788,8 +790,7 @@ header.nav-open .nav-toggle span:nth-child(3) {
     position: absolute;
     bottom: 20px;
     right: 0;
-    color: #5c8fbf;
-    /* Light blue from image */
+    color: var(--secondary-color);
     font-weight: 600;
     font-size: 0.9rem;
     text-decoration: none;
@@ -801,5 +802,141 @@ header.nav-open .nav-toggle span:nth-child(3) {
 }
 
 
+.bolumler-infoBox {
+    background-color: var(--bg-light);
+    border-left: 5px solid var(--primary-color);
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.infoBox-header {
+    background-color: var(--bg-dlight);
+    color: var(--primary-color-darker);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+.infoBox-content {
+    padding: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+
+.info-item .text a {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-item .text a:hover {
+    text-decoration: underline;
+}
+
+.info-item .text p {
+    color: var(--text-dark);
+    font-size: 15px;
+    margin: 0;
+}
+
+.info-item .text .link {
+    color: var(--primary-color);
+    font-weight: 500;
+    display: inline;
+    font-size: inherit;
+}
+
+.info-item .text .link:hover {
+    text-decoration: underline;
+}
+
+.info-link {
+    margin-bottom: 20px;
+}
+
+.info-link a {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.info-link a:hover {
+    text-decoration: underline;
+}
+
+.info-note {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.info-note strong {
+    display: block;
+    color: var(--text-darker);
+    margin-bottom: 5px;
+}
+
+.info-note p {
+    color: var(--text-dark);
+    font-size: 15px;
+}
+
+.info-note .link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.info-note .link:hover {
+    text-decoration: underline;
+}
+
 
 .bolumler-flex-right {}
+
+.bolumler-sayfalar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    gap: 5px;
+
+}
+
+
+.bolumler-sayfalar a {
+    color: var(--secondary-color);
+
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.bolumler-sayfalar a.active {
+    background-color: #e0e0e0;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.bolumler-sayfalar a:hover:not(.active) {
+    background-color: #f0f0f0;
+    color: var(--primary-color);
+}
+
+.bolumler-sayfalar .next {
+    font-weight: bold;
+    font-size: 20px;
+}
