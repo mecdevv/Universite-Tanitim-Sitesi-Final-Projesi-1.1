@@ -1410,7 +1410,6 @@ header.nav-open .nav-toggle span:nth-child(3) {
     gap: 25px;
 }
 
-/* Enhanced Kadro Card for Page */
 .kadro-card-info {
     margin-bottom: 15px;
 }
@@ -1437,9 +1436,7 @@ header.nav-open .nav-toggle span:nth-child(3) {
     }
 }
 
-/* ========================================
-   BÖLÜMLER PREVIEW SECTION (Homepage)
-   ======================================== */
+
 
 .bolumler-preview-section {
     max-width: 1200px;
